@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+*.log
+
+# Virtual Environment
+my_venv/
+env/
+venv/
+ENV/
+.venv/
+
+
+# Django
+*.sqlite3
+*.log
+db.sqlite3
+/media
+/staticfiles
+/local_settings.py
+
+# VSCode and IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS/Linux
+.DS_Store
+Thumbs.db
+
+# Pycharm
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Git
+*.orig
+*.swp
+*.swo
