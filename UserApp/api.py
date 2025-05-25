@@ -15,23 +15,6 @@ def CreateUserApi(request):
             'message': 'User created successfully'
         })
 
-@api_view(['POST'])
-def LoginUserApi(request):
-    username = request.data['username']
-    password = request.data['password']
-
-    user = authenticate(username=username, password=password)
-    if user is not None:
-        login(request, user)  # Assuming you have a login function to handle session
-        return Response(
-            {
-                'message': 'Login successful'
-            })
-    else:
-        return Response(
-            {
-                'message': 'Invalid credentials'
-            })
 
 @api_view(['GET'])
 def ProtectedUserApi(request):
